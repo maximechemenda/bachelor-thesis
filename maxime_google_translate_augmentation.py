@@ -79,7 +79,5 @@ def augment_meeting_transcripts(meeting):
     return new_meeting
         
         
-    
-
 if __name__ == "__main__":
     run()

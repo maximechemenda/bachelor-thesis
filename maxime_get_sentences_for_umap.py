@@ -5,9 +5,6 @@ domain = "Product"
 AUGMENTED_WITH_GPT_PATH = f"maximeOracles/augmented/{domain}/qmsum_train_with_oracle.jsonl"
 AUGMENTED_WITH_GOOGLE_PATH = f"maximeOracles/augmented_with_google_translate/{domain}/qmsum_train_with_oracle.jsonl"
 
-# 1 augmented
-# 2 original
-
 class SentencesGetter(object):
     def __init__(self):
         self.augmented_with_gpt_file_content = None

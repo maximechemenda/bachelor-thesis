@@ -59,18 +59,6 @@ class OracleMaker(object):
                         if len(set(topics).intersection(self.topics_per_domain[domain])) > 0:
                             out.write(item)
                         
-                
-                
-                
-        
-        
-            
-            
-            
-        
-
-
-
 
 if __name__ == "__main__":
     oracle_maker = OracleMaker()

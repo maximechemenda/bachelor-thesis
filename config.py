@@ -26,7 +26,7 @@ class Config(object):
         self.cls_lr = 5e-5 
         self.gen_lr = 5e-5 
 
-        #TODO(MC): It was set to False. I set it to True so that it creates new cached files and saves new features (c.f. def load_features_from_cache(self): in unified_data.py)
+        # It was set to False. I set it to True so that it creates new cached files and saves new features (c.f. def load_features_from_cache(self): in unified_data.py)
         self.overwrite_cache = True
         # self.overwrite_cache = False 
         self.weight_decay = 0.0  
@@ -46,7 +46,6 @@ class Config(object):
         assert self.train_batch_size % self.gradient_accumulation_steps == 0
 
         # Miscellaneous.
-        #TODO(MC) num_workers was 8
         self.num_workers = 12
         self.ROUND = 4
         self.seed = [0, 1, 2, 3, 4][0] 

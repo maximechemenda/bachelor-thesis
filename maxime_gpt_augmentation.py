@@ -1,16 +1,11 @@
 import json
 import openai
 
-# Replace 'your_api_key_here' with your actual API key
+# API key
 openai.api_key = "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"
-# openai.api_key = "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"
 
-# I HAVE ALREADY AUGMENTED COMMITEE
-# I HAVE ALREADY AUGMENTED ACADEMIC
-# I AM CURRENTLY AUGMENTING PRODUCT
 
-# INPUT_ORACLE_FILE = 'maximeOracles/non-augmented/Product/qmsum_train_with_oracle.jsonl'
-INPUT_ORACLE_FILE = 'PRODUCT_DUPLICATE_qmsum_train_with_oracle.jsonl'
+INPUT_ORACLE_FILE = 'maximeOracles/non-augmented/Product/qmsum_train_with_oracle.jsonl'
 OUTPUT_ORACLE_FILE = 'gpt_augmented_product_train_part_2.jsonl'
 
 # Function to paraphrase a given text using OpenAI's GPT-3 Davinci model
@@ -81,8 +76,6 @@ def augment_meeting_transcripts(meeting):
         
     return new_meeting
         
-        
-    
 
 if __name__ == "__main__":
     run()
